@@ -13,6 +13,22 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display="block";
+            } else {
+                mybutton.style.display="none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     <div class="container">
         <header class="header">
             <img src="logos/Asset 1@3x.png">
@@ -51,16 +67,23 @@
                         every aspect of the business, from jewelry design to marketing to e-commerce.</p>
                 </article>
                 <article>
-                    
+                    <img src="photos/behind_scenes.jpg">
+                    <h1>Behind the Scenes</h1>
+                    <p>Interested in what and how we go from the raw materials to the luxurious
+                        jewelry that we provide to all of you valued customers? Look no more! We
+                        have planned a variety of videos to show you how we do things. From sourcing
+                        material to making the final touches to our jewelry, we will show you how we
+                        do it. Stay tuned and check out our Info page to see when they come out!
+                    </p>
                 </article>
             </section>
         </main>
         <footer class="footer">
             <div>
-                <img src="logos/Asset 1@3x.png">
+                <img src="logos/Asset 2@3x.png">
             </div>
             <div>
-                Copyright 2022
+                <p>Copyright 2022</p>
             </div>
         </footer>
     </div>
