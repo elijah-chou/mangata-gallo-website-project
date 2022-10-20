@@ -22,14 +22,29 @@ nav ul {
 
 nav li {
   display: inline-block;
-  background-color: beige;
   padding: auto;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+nav a:link {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:visited{
+  color:blueviolet;
 }
 
 nav a:hover {
   background-color: darkorange;
+}
+
+nav a:active{
+  background-color:chocolate;
 }
 
 section {
@@ -48,7 +63,7 @@ article {
 }
 
 article:hover{
-  background-color: aqua;
+  background-color: cadetblue;
 }
 
 article h1 {
@@ -83,6 +98,7 @@ footer {
 
 footer div {
   flex: 1;
+  margin: 10px;
 }
 
 footer img {
@@ -90,6 +106,11 @@ footer img {
   max-height: 70%;
   margin: 10px;
   z-index: -1;
+}
+
+.copyright {
+  justify-content: right;
+  align-content: center;
 }
 
 #myBtn {
