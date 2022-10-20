@@ -35,12 +35,20 @@ nav a:hover {
 section {
   display: flex;
 }
+a img:hover{
+  transform: skew(10deg);
+  transition: transform 1s ease 0.5s;
+}
 
 article {
   flex: 1;
   background-color: aliceblue;
   padding: auto;
   margin: 10px;
+}
+
+article:hover{
+  background-color: aqua;
 }
 
 article h1 {
@@ -60,6 +68,12 @@ article img {
   max-width: 50%;
   max-height: 50%;
 }
+
+article img:hover{
+  transform: rotate(360deg);
+  transition: transform 1s ease 0.5s;
+}
+
 
 footer {
   display: flex;
