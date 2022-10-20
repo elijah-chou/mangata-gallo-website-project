@@ -1,56 +1,78 @@
 .container {
-    display: grid;
-    max-width: 900px;
-    min-height: 50vh;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto 1fr auto auto;
-    grid-template-areas: "header" "left" "main" "right" "footer";
-  }
-  
-  @media (min-width: 440px) {
-    .container {
-      grid-template-columns: 150px 1fr 150px;
-      grid-template-rows: auto 1fr auto;
-      grid-template-areas: "header header header" "left main right" "footer footer footer";
-    }
-  }
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  max-height: 70%;
+}
 
-  img {
-    max-width: 50%;
-    max-height: 50%;
-  }
-  
-  .header {
-    grid-area: header;
-    padding: 10px;
-    background-color: white;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .main {
-    grid-area: main;
-    padding: 25px;
-  }
-  
-  .left {
-    grid-area: left;
-    background-color: peachpuff;
-  }
-  
-  .right {
-    grid-area: right;
-  }
-  
-  .footer {
-    grid-area: footer;
-    padding: 10px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .sidebar {
-    padding: 25px;
-    background-color: darkcyan;
-  }
+nav {
+  background-color: bisque;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  background-color: beige;
+  padding: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  background-color: darkorange;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+  background-color: aliceblue;
+  padding: auto;
+  margin: 10px;
+}
+
+article h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+article p {
+  margin: 10px;
+}
+
+article img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer img {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 10px;
+  z-index: -1;
+}
